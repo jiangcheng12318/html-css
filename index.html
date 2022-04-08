@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花</title>
+    <style>
+        div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            margin: 100px auto;
+            border-radius: 100px;
+        }
+
+        .div1, .div2, .div3, .div4 {
+            position: absolute;
+            border: 1px solid white;
+            width: 99px;
+            height: 99px;
+        }
+
+        .div1 {
+            top: -1px;
+            left: -1px;
+            border-radius: 0 100px 0 0;
+            border-top: 1px solid red;
+            border-right: 1px solid red;
+        }
+
+        .div2 {
+            bottom: -1px;
+            left: -1px;
+            border-radius: 0 0 100px 0;
+            border-bottom: 1px solid red;
+            border-right: 1px solid red;
+        }
+
+        .div3 {
+            bottom: -1px;
+            right: -1px;
+            border-radius: 0 0 0 100px;
+            border-bottom: 1px solid red;
+            border-left: 1px solid red;
+        }
+
+        .div4 {
+            top:-1px;
+            right: -1px;
+            border-radius: 100px 0 0 0;
+            border-top: 1px solid red;
+            border-left: 1px solid red;
+        }
+        #sqrt{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid white;
+            position: relative;
+        }
+        .sq1,.sq2,.sq3,.sq4{
+            position: absolute;
+            width: 99px;
+            height: 99px;
+            border: 1px solid red;
+        }
+        .sq1{
+            top: -1px;
+            left: -1px;
+            border-radius: 100px 100px 0 100px;
+        }
+        .sq2{
+            top: -1px;
+            right: -1px;
+            border-radius: 100px 100px 100px 0;
+        }
+        .sq3{
+            bottom: -1px;
+            left: -1px;
+            border-radius: 100px 0 100px 100px;
+        }
+        .sq4{
+            bottom: -1px;
+            right: -1px;
+            border-radius: 0 100px 100px 100px;
+        }
+        #fan{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 1px solid white;
+            position: relative;
+        }
+        .fan1,.fan2{
+            width: 198px;
+            height: 198px;
+            border: 1px solid red;
+            position: absolute;
+        }
+        .fan1{
+            top: -1px;
+            left: -1px;
+            border-radius: 0 200px;
+        }
+        .fan2{
+            bottom: -1px;
+            right: -1px;
+            border-radius: 200px 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</div>
+<p id="sqrt">
+    <span class="sq1"></span>
+    <span class="sq2"></span>
+    <span class="sq3"></span>
+    <span class="sq4"></span>
+</p>
+<p id="fan">
+    <span class="fan1"></span>
+    <span class="fan2"></span>
+</p>
+</body>
+</html>
