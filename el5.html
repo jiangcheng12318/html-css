@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三角形</title>
+    <style>
+        div{
+            text-align: center;
+            margin: auto;
+        }
+        .smalltri {
+            position: relative;
+            width: 0;
+            border-top: 100px solid red;
+            border-left: 100px solid blue;text-align: center;
+            margin: auto;
+        }
+
+        .triangleL {
+            border: 100px solid transparent;
+        }
+
+        .triangleS {
+            width: 0;
+            border-top: 100px solid red;
+            border-right: 100px solid blue;
+            border-bottom: 100px solid salmon;
+            border-left: 100px solid lavenderblush;
+        }
+    </style>
+</head>
+<body>
+<div class="smalltri"></div>
+<div>表示若只定义两个边框，则按top-(left or right)，其边长为100px，即设定的值可用来造三角形。此时100px为他的高。<hr>
+！！！注意，若只设置一个边框，不会显示任何东西</div>
+<div class="triangleL">
+    <div class="triangleS">
+    </div>
+</div>
+<div>表示在父级设置了透明的边框，此时要显示三角形，只需要将一边的颜色改变。</div>
+</body>
+</html>
