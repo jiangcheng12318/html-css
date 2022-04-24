@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VPaoNP</title>
+    <link href="../reset.css" rel="stylesheet">
+    <style>
+        html {
+            background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("VPaoNP.jpeg");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #f3f3f3;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto 8px;
+        }
+
+        #title {
+            width: 520px;
+            color: #f3f3f3;
+            text-align: center;
+            font-family: Poppins, sans-serif;
+            font-size: 32px;
+            margin: 50px auto 8px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        #description {
+            width: 520px;
+            color: #f3f3f3;
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            margin: 8px auto;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 40%);
+            font-weight: 200;
+        }
+
+        #survey-form {
+            width: 640px;
+            padding: 40px;
+            background: rgba(27, 27, 50, 0.8);
+            text-align: left;
+            border-radius: 0.25rem;
+            margin: 30px auto 0 auto;
+        }
+
+        .form-control {
+            width: 97%;
+            height: 24px;
+            padding: 6px 8px;
+            margin: 8px auto 8px;
+            font-size: 16px;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            color: #495057;
+            font-weight: 400;
+        }
+
+        #dropdown, #drop {
+            width: 100%;
+            height: 2.375rem;
+        }
+
+        .space {
+            margin: 0 auto 20px;
+        }
+
+        .input-radio, .input-checkbox {
+            display: inline-block;
+            min-width: 1.25rem;
+            min-height: 1.25rem;
+            margin: 0 10px 10px 0;
+            vertical-align: top;
+        }
+
+        .input-checkbox:hover {
+            transform: scale(0.98);
+        }
+
+        .input-textarea {
+            width: 97%;
+            padding: 10px;
+            min-height: 100px;
+            font-size: 16px;
+            color: #495057;
+            font-family: sans-serif;
+        }
+
+        #submit {
+            width: 100%;
+            font-size: 16px;
+            background: #37af65;
+            color: inherit;
+            font-family: inherit;
+            padding: 12px;
+            cursor: pointer;
+            line-height: 1.2;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <div class="space">
+            <label for="name" id="name-label">Name</label><br>
+            <input class="form-control" id="name" name="name" placeholder="Enter your name" required type="text"><br>
+        </div>
+        <div class="space">
+            <label for="email" id="email-label">Email</label><br>
+            <input class="form-control" id="email" name="email" placeholder="Enter your Email" required
+                   type="email"><br>
+        </div>
+        <div class="space">
+            <label for="number" id="number-label">Age(optional)</label><br>
+            <input class="form-control" id="number" max="99" min="10" name="Age" placeholder="Age" type="number"><br>
+        </div>
+        <div class="space">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select class="form-control" id="dropdown" name="role" required>
+                <option disabled selected value>Select current role</option>
+                <option>Student</option>
+                <option>Full Time job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>others</option>
+            </select>
+        </div>
+        <div class="space">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input checked class="input-radio" name="possibility" type="radio" value="Definitely">Definitely<br>
+            </label>
+            <label>
+                <input class="input-radio" name="possibility" type="radio" value="Maybe">Maybe<br>
+            </label>
+            <label>
+                <input class="input-radio" name="possibility" type="radio" value="Not sure">Not sure<br>
+            </label>
+        </div>
+        <div class="space">
+            <label for="drop">What is your favorite feature of freeCodeCamp?</label>
+            <select class="form-control" id="drop" name="feature" required>
+                <option disabled selected value>Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+        </div>
+        <div class="space">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label>
+                <input class="input-checkbox" type="checkbox" value="Front-end Projects">Front-end Projects<br>
+                <input class="input-checkbox" type="checkbox" value="Back-end Projects">Back-end Projects<br>
+                <input class="input-checkbox" type="checkbox" value="Data Visualization">Data Visualization<br>
+                <input class="input-checkbox" type="checkbox" value="Challenges">Challenges<br>
+                <input class="input-checkbox" type="checkbox" value="Open Source Community">Open Source Community<br>
+                <input class="input-checkbox" type="checkbox" value="Gitter help rooms">Gitter help rooms<br>
+                <input class="input-checkbox" type="checkbox" value="Videos">Videos<br>
+                <input class="input-checkbox" type="checkbox" value="City Meetups">City Meetups<br>
+                <input class="input-checkbox" type="checkbox" value="Wiki">Wiki<br>
+                <input class="input-checkbox" type="checkbox" value="Forum">Forum<br>
+                <input class="input-checkbox" type="checkbox" value="Additional Courses">Additional Courses<br>
+            </label>
+        </div>
+        <div class="space">
+            <p>Any comments or suggestions?</p>
+            <label>
+                <textarea class="input-textarea" name="comment" placeholder="Enter your comment here…"></textarea>
+            </label>
+        </div>
+        <div class="space">
+            <label>
+                <input id="submit" type="submit" value="Submit">
+            </label>
+        </div>
+    </form>
+</div>
+</body>
+</html>
